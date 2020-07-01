@@ -1,0 +1,384 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-header
+{
+    display:block;
+    background-color: #29363b;
+}
+
+.nav-list {
+    background-color: rgba(41, 54, 59, 0.8);
+}
+
+.signup {
+    border: 3px solid #2ECEFF;
+    border-radius: 15px;
+}
+
+.login {
+    background-color:#2ECEFF;
+    border-radius: 15px;
+}
+
+.mobile1 {
+    width: 120px;
+    position: relative;
+    top: 0;
+    right: -2em;
+    z-index: 1;
+}
+
+.mobile2 {
+    width: 120px;
+    position: relative;
+    top: 3em;
+    right: 2em;
+}
+
+.heading h3 {
+    text-align: center;
+    position: relative;
+    top: 1em;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.heading {
+    text-align: center;
+    background-image: url(./img/bg-img.png), url(./img/diagonal-bg-design-left.png), url(./img/diagonal-bg-design-right.png);
+    background-position: right top, 0px 180px, 300px 760px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 375px 580px, 60px 200px, 80px 180px;
+}
+
+.brainy {
+    position: relative;
+    top: 3em;
+    width: 150px;
+}
+
+.features {
+    color: #f5f5f5;
+    background-color: #29363B;
+    box-sizing: border-box;
+}
+
+.features h4 {
+    padding: 20px 8px;
+}
+
+.feat-box {
+    text-align: center;
+    color: #373737;
+    padding: 0px 10px 2px;
+    width: 143px;
+    background-color: #FFFFFF;
+    margin: 20px auto;
+}
+
+.feat-img {
+    width: 70px;
+    padding: 20px 10px 10px;
+}
+
+.download {
+    background-color: #f5f5f5;
+    padding-bottom: 130px;
+}
+.download img {
+    width: 270px;
+}
+
+.download-link p {
+    font-size: 14px;
+    margin: 10px 10px 50px;
+}
+
+.download-link img {
+    width: 170px;
+}
+
+
+.review-img {
+    width: 180px;
+}
+
+/*  */
+blockquote:before {
+    font-family: Georgia, serif;
+    color: #698C9A;
+    position: relative;
+    font-size: 3.5em;
+    line-height: 1;
+    top: -0.1em;
+    left: -0.5em;
+    content: "\201C";
+}
+
+blockquote {
+    color: #434343;
+    font-size: 14px;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+
+blockquote:after {
+    font-family: Georgia, serif;
+    color: #698C9A;
+    position: relative;
+    float:right;
+    font-size: 3.5em;
+    line-height: 1;
+    right: 0.9em;
+    bottom: -0.6em;
+    content: "\201D";
+}
+
+.icon-left {
+    padding: 20px 15px;
+    font-size: 16px;
+    background-color: #698C9A;
+    border-radius: 6px 0px 0px 6px;
+    opacity: 1;
+    position: relative;
+    top: 0em;
+    right: 0.7em;
+}
+
+.icon-right {
+    padding: 20px 15px;
+    font-size: 16px;
+    background-color: #698C9A;
+    border-radius: 0px 6px 6px 0px;
+    opacity: 1;
+    position: relative;
+    top: 0em;
+    right: -0.7em;
+}
+
+.foot {
+    color: white;
+    background-color: #29363b;
+}
+
+.email-text {
+    display: inline-block; 
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    width: 70%;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 20px 0 0 20px;
+}
+
+.email-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    color: #fff;
+    background-color: #2ECEFF;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    border-radius: 0 20px 20px 0;
+}
+
+.email {
+    padding: auto 0;
+}
+
+.foot p{
+    font-size: 11px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .main-nav {
+       background-color: #29363b;
+    }
+
+    .main-nav ul li {
+       padding: 20px 5px 10px;
+    }
+
+    .login {
+        background: transparent;
+        border: 3px solid #2eceff;
+        border-radius: 10px;
+        margin-right: 80px;
+    }
+
+   
+    .mobile1 {
+        width: 380px;
+        position: relative;
+        top: 2rem;
+        right: -16rem;
+        z-index: 0;
+    }
+    
+    .mobile2 {
+        width: 380px;
+        position: relative;
+        top: 8rem;
+        right: -13rem;
+    }
+
+    .brainy {
+        position: relative;
+        top: -45rem;
+        right: 28rem;
+        width: 340px;
+    }
+
+    .heading h3 {
+        font-size: 64px;
+        position: relative;
+        top: -12rem;
+        right: 28rem;
+    }
+
+    .heading {
+        height: 1300px;
+        background-position: right top, 40px 600px, 1230px 1100px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 1350px 1500px, 150px 280px, 120px 220px;
+    }
+
+    .brief {
+        position: relative;
+        top: -450px;
+    }
+
+    .brief h4 {
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+
+    .brief p {
+        font-size: 30px;
+    }
+
+    .features h4 {
+        font-size: 40px;
+    }
+
+    .feat-box {
+        box-sizing: border-box;
+        font-size: 28px;
+        margin: 50px 8px;
+        padding: 20px;
+        width: 280px;
+    }
+
+    .feat-img {
+        width: 130px;
+        padding: 10px;
+    }
+
+    .download h4 {
+        font-size: 40px;
+    }
+
+    .download img {
+        width: 580px;
+        margin-right: 200px;
+    }
+
+    .download-link p {
+        text-align: justify;
+        width: 700px;
+        font-size: 24px;
+    }
+
+    .download-link img {
+        width: 440px;
+    }
+
+    .reviews {
+        box-sizing: border-box;
+        background: url(./img/diagonal-bg-design-right.png) no-repeat;
+        background-position: 1550px -80px;
+        background-size: 70px 200px;
+        padding: 30px 0px 70px;
+    }
+
+    .reviews row {
+        margin: 30px;
+    }
+
+    .reviews h4 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .review-img {
+        width: 250px;
+    }
+
+    .review-col {
+        border-right: 1px solid black;
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+
+    .foot ul,
+    .foot h5,
+    .foot h4 {
+        text-align: justify;
+    }
+    .foot h5 {
+        font-size: 22px;
+    }
+
+    .foot p {
+        font-size: 18px;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
