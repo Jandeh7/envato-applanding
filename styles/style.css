@@ -40,6 +40,7 @@ h4 {
 
 .mobile1 {
     width: 7.5rem;
+    height: 15.625rem;
     position: relative;
     top: 0;
     right: -2em;
@@ -48,6 +49,7 @@ h4 {
 
 .mobile2 {
     width: 7.5rem;
+    height: 15.625rem;
     position: relative;
     top: 3em;
     right: 2em;
