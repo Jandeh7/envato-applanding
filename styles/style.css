@@ -1,7 +1,10 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -11,7 +14,7 @@ a {
 
 h4 {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: bold;
 }
 
@@ -27,16 +30,16 @@ h4 {
 
 .signup {
     border: 3px solid #2ECEFF;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .login {
     background-color:#2ECEFF;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .mobile1 {
-    width: 120px;
+    width: 7.5rem;
     position: relative;
     top: 0;
     right: -2em;
@@ -44,7 +47,7 @@ h4 {
 }
 
 .mobile2 {
-    width: 120px;
+    width: 7.5rem;
     position: relative;
     top: 3em;
     right: 2em;
@@ -55,21 +58,21 @@ h4 {
     position: relative;
     top: 1em;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .heading {
     text-align: center;
     background-image: url(./img/bg-img.png), url(./img/diagonal-bg-design-left.png), url(./img/diagonal-bg-design-right.png);
-    background-position: right top, 0px 180px, 300px 760px;
+    background-position: right top, 0rem 11.25rem, 18.75rem 47.5rem;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 375px 580px, 60px 200px, 80px 180px;
+    background-size: 23.45rem 36.25rem, 3.7rem 12.5rem, 5em 11.25rem;
 }
 
 .brainy {
     position: relative;
     top: 3em;
-    width: 150px;
+    width: 9.375rem;
 }
 
 .features {
@@ -79,43 +82,44 @@ h4 {
 }
 
 .features h4 {
-    padding: 20px 8px;
+    padding: 0.8rem 0.5rem;
 }
 
 .feat-box {
     text-align: center;
     color: #373737;
     padding: 0px 10px 2px;
-    width: 143px;
+    width: 9rem;
     background-color: #FFFFFF;
-    margin: 20px auto;
+    margin: 0.8rem auto;
 }
 
 .feat-img {
-    width: 70px;
+    width: 7.5rem;
     padding: 20px 10px 10px;
 }
 
 .download {
     background-color: #f5f5f5;
-    padding-bottom: 130px;
+    padding-bottom: 8.125rem;
 }
-.download img {
-    width: 270px;
+
+.download-img {
+    width: 16.875rem;
 }
 
 .download-link p {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 10px 10px 50px;
 }
 
 .download-link img {
-    width: 170px;
+    width: 10.625rem;
 }
 
 
 .review-img {
-    width: 180px;
+    width: 11.25rem;
 }
 
 /*  */
@@ -132,7 +136,7 @@ blockquote:before {
 
 blockquote {
     color: #434343;
-    font-size: 14px;
+    font-size: 0.875rem;
     position: relative;
     margin: 0.5em;
     padding: 0.5em 2em 0.5em 3em;
@@ -152,7 +156,7 @@ blockquote:after {
 
 .icon-left {
     padding: 20px 15px;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #698C9A;
     border-radius: 6px 0px 0px 6px;
     opacity: 1;
@@ -163,7 +167,7 @@ blockquote:after {
 
 .icon-right {
     padding: 20px 15px;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #698C9A;
     border-radius: 0px 6px 6px 0px;
     opacity: 1;
@@ -212,7 +216,7 @@ blockquote:after {
 }
 
 .foot p{
-    font-size: 11px;
+    font-size: 0.69rem;
 }
 
 .foot a {
@@ -226,11 +230,89 @@ blockquote:after {
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
+    .mobile1 {
+        top: 0.5rem;
+    }
+    
+    .mobile2 {
+        top: 3.5rem;
+    }
+    
+    .heading h3 {
+        top: 2.8rem;
+    }
+
+    .brainy {
+        top: 4.75em;
+        width: 9.75rem;
+    }
+    
+    .feat-box {
+        width: 10rem;
+        margin: 0.8rem auto;
+    }
+
+    blockquote:after {
+        right: 2.25em;
+    }
+
+    .foot .email-form {
+        width: 30rem;
+        margin: 0 auto;
+        position: static;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    .feat-box {
+        width: 10rem;
+    }
+
+    .features .row {
+        justify-content: space-around;
+    }
+    
+    .download-img {
+        width: 20rem;
+    }
+
+    .download-link img {
+        width: 13.5rem;
+    }
+
+    .reviews h4 {
+        font-size: 2.5rem;
+    }
+
+    blockquote {
+        font-size: 1rem;
+        margin: 0.5em;
+    }
+
+    blockquote:after {
+        position: relative;
+        float:right;
+        right: 4em;
+        bottom: -0.6em;
+        content: "\201D";
+    }
+    
+    .foot .email-form {
+        right: -3rem;
+    }
+
+    .emial-form h5 {
+        text-align: center;
+    }
+
+}
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -245,42 +327,41 @@ blockquote:after {
     .login {
         background: transparent;
         border: 3px solid #2eceff;
-        border-radius: 10px;
-        margin-right: 80px;
+        border-radius: 0.625rem;
+        margin-right: 5rem;
     }
-
    
     .mobile1 {
-        width: 380px;
+        width: 12rem;
         position: relative;
         top: 2rem;
-        right: -16rem;
+        right: -10rem;
         z-index: 0;
     }
     
     .mobile2 {
-        width: 380px;
+        width: 12rem;
         position: relative;
-        top: 8rem;
-        right: -13rem;
+        top: 5rem;
+        right: -8rem;
     }
 
     .brainy {
         position: relative;
-        top: -45rem;
-        right: 28rem;
-        width: 340px;
+        top: -24rem;
+        right: 20rem;
+        width: 12rem;
     }
 
     .heading h3 {
-        font-size: 64px;
+        font-size: 3.4rem;
         position: relative;
-        top: -12rem;
-        right: 28rem;
+        top: -4rem;
+        right: 20rem;
     }
 
     .heading {
-        height: 1300px;
+        height: 56rem;
         background-position: right top, 40px 600px, 1230px 1100px;
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 1350px 1500px, 150px 280px, 120px 220px;
@@ -288,52 +369,56 @@ blockquote:after {
 
     .brief {
         position: relative;
-        top: -450px;
+        top: -18rem;
     }
 
     .brief h4 {
-        font-size: 40px;
-        padding-bottom: 30px;
+        font-size: 2.5rem;
+        padding-bottom: 1.875rem;
     }
 
     .brief p {
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 
     .features h4 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .feat-box {
         box-sizing: border-box;
-        font-size: 28px;
+        font-size: 1.5rem;
         margin: 50px 8px;
-        padding: 20px;
-        width: 280px;
+        padding: 1.25rem;
+        width: 12.75rem;
+        height: 14rem;
     }
 
     .feat-img {
-        width: 130px;
-        padding: 10px;
+        width: 7rem;
+        padding: 1.75rem 0.625rem 0.625rem;
     }
-
+    
     .download h4 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
-    .download img {
-        width: 580px;
-        margin-right: 200px;
+    .download-img {
+        width: 24rem;
+        height: 31.625rem;
+        padding-top: 3rem;
+        margin-right: 4rem;
     }
 
     .download-link p {
         text-align: justify;
-        width: 700px;
-        font-size: 24px;
+        width: 30rem;
+        font-size: 1.25rem;
     }
 
     .download-link img {
-        width: 440px;
+        width: 22rem;
+        height: 7rem;
     }
 
     .reviews {
@@ -344,17 +429,17 @@ blockquote:after {
         padding: 30px 0px 70px;
     }
 
-    .reviews row {
-        margin: 30px;
+    .reviews .row {
+        margin: 1.875rem;
     }
 
     .reviews h4 {
-        font-size: 40px;
-        margin-bottom: 40px;
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 
     .review-img {
-        width: 250px;
+        width: 12rem;
     }
 
     .review-col {
@@ -362,23 +447,72 @@ blockquote:after {
     }
 
     blockquote {
-        font-size: 18px;
+        font-size: 16px;
+        width: 15rem;
     }
 
+    blockquote:after {
+        right: -0.2em;
+        bottom: -0.6em;
+    }
+
+    .foot-signup,
     .foot ul,
     .foot h5,
     .foot h4 {
         text-align: justify;
     }
-    .foot h5 {
-        font-size: 22px;
+    
+    .foot h5,
+    .foot p {
+        font-size: 1.125rem;
     }
 
-    .foot p {
-        font-size: 18px;
+    .foot .email-form {
+        right: 1rem;
     }
 
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+    .mobile1 {
+        width: 23.75rem;
+        position: relative;
+        top: 2rem;
+        right: -16rem;
+        z-index: 0;
+    }
+    
+    .mobile2 {
+        width: 23.75rem;
+        position: relative;
+        top: 8rem;
+        right: -13rem;
+    }
+
+    .brainy {
+        position: relative;
+        top: -45rem;
+        right: 28rem;
+        width: 21.25rem;
+    }
+
+    .download img {
+        width: 35rem;
+        margin-right: 12rem;
+    }
+
+    .download.link {
+        text-align: justify;
+    }
+
+    .download-link p {
+        width: 40rem;
+        font-size: 1.55rem;
+    }
+
+    .download-link img {
+        width: 25rem;
+    }
+}
