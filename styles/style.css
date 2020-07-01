@@ -1,22 +1,20 @@
+/* ================================================= 
+   Base Elements Styles
+==================================================== */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
+/* ================================= 
+  Base Layout Styles
+==================================== */
 
-h4 {
-    text-align: center;
-    font-size: 1.37rem;
-    font-weight: bold;
-}
+/* Navigation styles */
 
 .navbar-header
 {
@@ -38,6 +36,53 @@ h4 {
     border-radius: 1rem;
 }
 
+/* Main Body Styles */
+
+.heading {
+    text-align: center;
+    background-image: url(./img/bg-img.png), url(./img/diagonal-bg-design-left.png), url(./img/diagonal-bg-design-right.png);
+    background-position: right top, 0rem 11.25rem, 18.75rem 47.5rem;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 23.45rem 36.25rem, 3.7rem 12.5rem, 5em 11.25rem;
+}
+
+.features {
+    color: #f5f5f5;
+    background-color: #29363B;
+    box-sizing: border-box;
+}
+
+.feat-box {
+    text-align: center;
+    color: #373737;
+    padding: 0px 10px 2px;
+    width: 9rem;
+    background-color: #FFFFFF;
+    margin: 0.8rem auto;
+}
+
+.download {
+    background-color: #f5f5f5;
+    padding-bottom: 8.125rem;
+}
+
+.foot {
+    color: white;
+    background-color: #29363b;
+}
+
+/* ================================= 
+  Content Styles
+==================================== */
+
+/*Image Styles*/
+
+.brainy {
+    position: relative;
+    top: 3em;
+    width: 9.375rem;
+}
+
 .mobile1 {
     width: 7.5rem;
     height: 15.625rem;
@@ -55,6 +100,30 @@ h4 {
     right: 2em;
 }
 
+.feat-img {
+    width: 7.5rem;
+    padding: 20px 10px 10px;
+}
+
+.download-img {
+    width: 16.875rem;
+}
+
+.download-link img {
+    width: 10.625rem;
+}
+
+.review-img {
+    width: 11.25rem;
+}
+
+/*Typography Styles*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .heading h3 {
     text-align: center;
     position: relative;
@@ -63,51 +132,14 @@ h4 {
     font-size: 1.75rem;
 }
 
-.heading {
-    text-align: center;
-    background-image: url(./img/bg-img.png), url(./img/diagonal-bg-design-left.png), url(./img/diagonal-bg-design-right.png);
-    background-position: right top, 0rem 11.25rem, 18.75rem 47.5rem;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 23.45rem 36.25rem, 3.7rem 12.5rem, 5em 11.25rem;
-}
-
-.brainy {
-    position: relative;
-    top: 3em;
-    width: 9.375rem;
-}
-
-.features {
-    color: #f5f5f5;
-    background-color: #29363B;
-    box-sizing: border-box;
-}
-
 .features h4 {
     padding: 0.8rem 0.5rem;
 }
 
-.feat-box {
+h4 {
     text-align: center;
-    color: #373737;
-    padding: 0px 10px 2px;
-    width: 9rem;
-    background-color: #FFFFFF;
-    margin: 0.8rem auto;
-}
-
-.feat-img {
-    width: 7.5rem;
-    padding: 20px 10px 10px;
-}
-
-.download {
-    background-color: #f5f5f5;
-    padding-bottom: 8.125rem;
-}
-
-.download-img {
-    width: 16.875rem;
+    font-size: 1.37rem;
+    font-weight: bold;
 }
 
 .download-link p {
@@ -115,16 +147,20 @@ h4 {
     margin: 10px 10px 50px;
 }
 
-.download-link img {
-    width: 10.625rem;
+.foot p{
+    font-size: 0.69rem;
 }
 
-
-.review-img {
-    width: 11.25rem;
+blockquote {
+    color: #434343;
+    font-size: 0.875rem;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
 }
 
-/*  */
+/*Icons, Forms and Input Styles*/
+
 blockquote:before {
     font-family: Georgia, serif;
     color: #698C9A;
@@ -134,14 +170,6 @@ blockquote:before {
     top: -0.1em;
     left: -0.5em;
     content: "\201C";
-}
-
-blockquote {
-    color: #434343;
-    font-size: 0.875rem;
-    position: relative;
-    margin: 0.5em;
-    padding: 0.5em 2em 0.5em 3em;
 }
 
 blockquote:after {
@@ -178,11 +206,6 @@ blockquote:after {
     right: -0.7em;
 }
 
-.foot {
-    color: white;
-    background-color: #29363b;
-}
-
 .email-text {
     display: inline-block; 
     height: calc(1.5em + .75rem + 2px);
@@ -217,17 +240,11 @@ blockquote:after {
     padding: auto 0;
 }
 
-.foot p{
-    font-size: 0.69rem;
-}
-
 .foot a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-/* Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 576px and up)*/
 
@@ -281,17 +298,33 @@ blockquote:after {
         justify-content: space-around;
     }
     
-    .download-img {
-        width: 20rem;
+    .download-link img {
+        width: 15.5rem;
     }
 
-    .download-link img {
-        width: 13.5rem;
+    .download-img {
+        width: 20rem;
+        height: 27.625rem;
+    }
+
+    .download-link p {
+        text-align: justify;
+        width: 23rem;
+        font-size: 1.25rem;
     }
 
     .reviews h4 {
         font-size: 2.5rem;
     }
+
+    .icon-left {
+        right: 2.5rem;
+    }
+    
+    .icon-right {
+        right: -2.5rem;
+    }
+    
 
     blockquote {
         font-size: 1rem;
@@ -299,13 +332,12 @@ blockquote:after {
     }
 
     blockquote:after {
-        position: relative;
-        float:right;
         right: 4em;
-        bottom: -0.6em;
-        content: "\201D";
     }
     
+    .foot p {
+        font-size: 1.25rem;
+    }
     .foot .email-form {
         right: -3rem;
     }
@@ -334,36 +366,37 @@ blockquote:after {
     }
    
     .mobile1 {
-        width: 12rem;
-        position: relative;
+        width: 20.56rem;
+        height: 46rem;
         top: 2rem;
         right: -10rem;
         z-index: 0;
     }
     
     .mobile2 {
-        width: 12rem;
+        width: 20.56rem;
+        height: 46rem;
         position: relative;
-        top: 5rem;
-        right: -8rem;
+        top: 6.5rem;
+        right: -6.5rem;
     }
 
     .brainy {
         position: relative;
-        top: -24rem;
+        top: -45rem;
         right: 20rem;
-        width: 12rem;
+        width: 17rem;
     }
 
     .heading h3 {
         font-size: 3.4rem;
         position: relative;
-        top: -4rem;
+        top: -18rem;
         right: 20rem;
     }
 
     .heading {
-        height: 56rem;
+        height: 76rem;
         background-position: right top, 40px 600px, 1230px 1100px;
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 1350px 1500px, 150px 280px, 120px 220px;
@@ -371,7 +404,7 @@ blockquote:after {
 
     .brief {
         position: relative;
-        top: -18rem;
+        top: -24rem;
     }
 
     .brief h4 {
@@ -425,9 +458,6 @@ blockquote:after {
 
     .reviews {
         box-sizing: border-box;
-        background: url(./img/diagonal-bg-design-right.png) no-repeat;
-        background-position: 1550px -80px;
-        background-size: 70px 200px;
         padding: 30px 0px 70px;
     }
 
@@ -480,7 +510,6 @@ blockquote:after {
 @media (min-width: 1200px) {
     .mobile1 {
         width: 23.75rem;
-        position: relative;
         top: 2rem;
         right: -16rem;
         z-index: 0;
@@ -488,7 +517,6 @@ blockquote:after {
     
     .mobile2 {
         width: 23.75rem;
-        position: relative;
         top: 8rem;
         right: -13rem;
     }
@@ -496,21 +524,26 @@ blockquote:after {
     .brainy {
         position: relative;
         top: -45rem;
-        right: 28rem;
+        right: 26rem;
         width: 21.25rem;
     }
 
-    .download img {
-        width: 35rem;
-        margin-right: 12rem;
+    .brief {
+        top: -30rem;
     }
 
-    .download.link {
-        text-align: justify;
+    .heading h3 {
+        top: -12rem;
+        right: 26rem;
+    }
+
+    .download img {
+        width: 30.75rem;
+        margin-right: 7.25rem;
     }
 
     .download-link p {
-        width: 40rem;
+        width: 35rem;
         font-size: 1.55rem;
     }
 
