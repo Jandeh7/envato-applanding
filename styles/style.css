@@ -92,11 +92,10 @@ body {
     position: relative;
     top: 0em;
     animation-name: mobile-1;
-    animation-duration: 4s;
-    animation-delay: 1s; 
+    animation-duration: 5s;
     animation-fill-mode: forwards;
 }
-  
+
 @keyframes mobile-1 {
     from {right: 22em;}
     to {right: -2em;}
@@ -108,14 +107,15 @@ body {
     position: relative;
     top: 3em;
     animation-name: mobile-2;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 
 @keyframes mobile-2 {
-    from {right: -22em;}
-    to {right: 2em;}
+    0% {right: 2em}
+    50% {right: -22em;}
+    100% {right: 2em;}
 }
 
 .feat-img {
@@ -172,10 +172,6 @@ h4 {
     font-size: 0.875rem;
     margin: 10px 10px 50px;
 }
-
-.email-form{
-   font-size: 0.69rem;
-   }
 
 .foot p{
     font-size: 0.85rem;
@@ -429,7 +425,7 @@ blockquote:after {
         animation-name: brainyy;
         animation-duration: 3s;
         animation-iteration-count: infinite;
-        animation-delay: 1s;
+        animation-delay: 4s;
         animation-fill-mode: forwards;
         animation-timing-function: linear;
     }
