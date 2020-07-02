@@ -174,7 +174,7 @@ h4 {
 }
 
 .foot p{
-    font-size: 0.69rem;
+    font-size: 0.85rem;
 }
 
 blockquote {
@@ -361,9 +361,19 @@ blockquote:after {
         right: 4em;
     }
     
+    .foot h5 {
+        font-size: 1.45rem;
+        font-weight: bold;
+    }
+
     .foot p {
         font-size: 1.25rem;
     }
+
+    .foot a {
+        font-size: 1.25rem;
+    }
+
     .foot .email-form {
         right: -3rem;
     }
@@ -531,9 +541,17 @@ blockquote:after {
         text-align: justify;
     }
     
-    .foot h5,
+    .foot h5{
+        font-size: 1.175rem;
+        font-weight: bold;
+    }
+
     .foot p {
-        font-size: 1.125rem;
+        font-size: 0.85rem;
+    }
+
+    .foot a {
+        font-size: 0.85rem;
     }
 
     .foot .email-form {
