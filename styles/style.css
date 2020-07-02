@@ -431,7 +431,7 @@ blockquote:after {
 
     @keyframes brainyy {
         0% {top: -45rem;}
-        50% {top: -70rem;}
+        50% {top: -0rem;}
         100% {top: -45rem;}
     }
 
